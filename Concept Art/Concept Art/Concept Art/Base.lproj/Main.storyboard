@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concept_Art" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See concept art" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVC-c5-GCo">
+                                <rect key="frame" x="129.33333333333331" y="125" width="169.33333333333331" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="85" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2rG-WM-s2K">
+                                <rect key="frame" x="91.666666666666686" y="192" width="245" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acO-LT-IlY">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="SciFi Art"/>
+                                        <connections>
+                                            <action selector="inventions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0n-o5-Tfb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nzT-Ww-DRe">
+                                        <rect key="frame" x="153" y="0.0" width="92" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Fantasy Art"/>
+                                        <connections>
+                                            <action selector="inventions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ktw-pU-U5F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hiG-QO-mDo"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iw-P7-0zy">
+                                <rect key="frame" x="66" y="262" width="291" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="esiel" highlightedImage="esiel" translatesAutoresizingMaskIntoConstraints="NO" id="ezI-aH-Fgd">
+                                <rect key="frame" x="9" y="297" width="409" height="579"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2rG-WM-s2K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="192" id="6zV-nV-kzT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ezI-aH-Fgd" secondAttribute="bottom" constant="25" id="8mO-Pz-MMm"/>
+                            <constraint firstItem="2rG-WM-s2K" firstAttribute="top" secondItem="ZVC-c5-GCo" secondAttribute="bottom" constant="37" id="AtX-XB-Wc9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ezI-aH-Fgd" secondAttribute="trailing" constant="-11" id="EzD-Nk-AKW"/>
+                            <constraint firstItem="2rG-WM-s2K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HVf-0k-dfN"/>
+                            <constraint firstItem="ezI-aH-Fgd" firstAttribute="top" secondItem="2rG-WM-s2K" secondAttribute="bottom" constant="66" id="SKd-ex-QsB"/>
+                            <constraint firstItem="ezI-aH-Fgd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="X02-gP-wNY"/>
+                            <constraint firstItem="2rG-WM-s2K" firstAttribute="centerX" secondItem="ZVC-c5-GCo" secondAttribute="centerX" id="pwy-0O-DcI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artImg" destination="ezI-aH-Fgd" id="LEn-Kg-h6W"/>
+                        <outlet property="artType" destination="2iw-P7-0zy" id="uvO-I7-06k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.644859813084111" y="69.330453563714912"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="esiel" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
