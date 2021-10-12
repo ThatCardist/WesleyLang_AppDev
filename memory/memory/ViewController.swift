@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     var selected1 : Card?
     
     //fill cardArray
-    func resetCards(){//fix error of it not filling in all the numbers
+    func resetCards(){
         var done = 0
         cardDict.removeAll()
         while(done < 12){
@@ -78,6 +78,7 @@ class ViewController: UIViewController {
         cardArray = [card1, card2, card3, card4, card5, card5, card6, card7, card8, card9, card10, card11, card12]
         newGame()
         //create gesture recognizers for all the cards
+        //tap gesture for multiple imageviews gotten here -> https://stackoverflow.com/questions/59349483/use-tap-gesture-reconigzier-on-multiple-image-views
         let gestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped))
         card1.addGestureRecognizer(gestureRecognizer1)
         let gestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped))
@@ -163,7 +164,7 @@ class ViewController: UIViewController {
         timerTime.text = "0:00"
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in self.updateTimer()})
     }
-    
+    //timer code adapted from animation lecture timer stuff
     func updateTimer(){
         seconds += 1
         if(seconds % 60 < 10){
