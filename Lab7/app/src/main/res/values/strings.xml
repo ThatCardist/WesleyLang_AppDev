@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="American">American</string>
+    <string name="itallian">Itallian</string>
+    <string name="other">Other</string>
+    <string name="hurry">Are you in a hurry?</string>
+    <string name="question">Where should you eat on campus?</string>
+    <string name="swipe">Meal Swipe</string>
+    <string name="money">Other</string>
+    <string name="payment">How will you pay for the meal?</string>
+    <string name="campusQ">What part of campus are you at?</string>
+    <string name="cuisineQ">What kind of food do you want?</string>
+    <string name="buttonTxt">Tell me where to eat!</string>
+    <string-array name="location">
+        <item name = "willvill">WillVill</item>
+        <item name = "main">Main Campus</item>
+        <item name = "east">East Campus</item>
+    </string-array>
+
+</resources>
