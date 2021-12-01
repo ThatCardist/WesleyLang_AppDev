@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab8</string>
+    <string name="nameD">Enter your name</string>
+    <string name="adjD">Enter an adjective</string>
+    <string name="verbD">Enter a verb</string>
+    <string name="makeSentence">Make Sentence!</string>
+    <string name="goToMadLibs">Check Out More MadLibs!</string>
+</resources>
