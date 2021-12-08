@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/addHeading"
+            style="@style/parentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/belgrano"
+            android:text="@string/edit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/movieTitle"
+            style="@style/BodyText"
+            android:layout_width="333dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/movieTitle"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/serviceText"
+            app:layout_constraintTop_toBottomOf="@+id/addHeading" />
+
+        <EditText
+            android:id="@+id/serviceText"
+            style="@style/BodyText"
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="38dp"
+            android:ems="10"
+            android:hint="@string/service"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/ratingLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieTitle" />
+
+        <TextView
+            android:id="@+id/ratingLabel"
+            style="@style/BodyText"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/selectRating"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/seen"
+            app:layout_constraintTop_toBottomOf="@+id/serviceText" />
+
+        <Spinner
+            android:id="@+id/ratingSpinner"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:entries="@array/ratings"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ratingLabel"
+            app:layout_constraintTop_toTopOf="@+id/ratingLabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/edit"
+            style="@style/BodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.762"
+            app:layout_constraintStart_toEndOf="@+id/delete"
+            app:layout_constraintTop_toTopOf="@+id/delete"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/BodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:backgroundTint="@color/secondaryColor"
+            android:text="@string/delete"
+            app:layout_constraintStart_toStartOf="@+id/ratingLabel"
+            app:layout_constraintTop_toBottomOf="@+id/seen" />
+
+        <CheckBox
+            android:id="@+id/seen"
+            style="@style/BodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/seen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

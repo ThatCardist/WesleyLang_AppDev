@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Watchlist</string>
+    <string name="addMovie">Add Movie!</string>
+    <string name="movieTitle">Movie Title</string>
+    <string name="service">Streaming Service</string>
+    <string name="selectRating">Select a rating:</string>
+    <string-array name="ratings">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="title_activity_list">List</string>
+    <string name="cancel">Cancel</string>
+    <string name="pickMovie">Pick Random Movie!</string>
+    <string name="seen">Have you seen the movie yet?</string>
+    <string name="delete">Delete Movie</string>
+    <string name="edit">Edit Movie</string>
+
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="todo">TODO</string>>
+</resources>
